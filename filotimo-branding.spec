@@ -116,7 +116,6 @@ done
 mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}
 pushd $RPM_BUILD_ROOT%{_sysconfdir}
   ln -s %{_datadir}/icons/hicolor/16x16/apps/fedora-logo-icon.png favicon.png
-  ln -s %{_datadir}/icons/hicolor/16x16/apps/fedora-logo-icon_classic.png favicon_classic.png
 popd
 
 # Fedora hicolor icons
@@ -196,6 +195,3 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
-* Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.1-1
-- new package built with tito
-
