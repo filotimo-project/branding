@@ -9,6 +9,7 @@ Source0:        %{name}-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  inkscape
+BuildRequires:  python3-scour
 BuildRequires:  netpbm-progs
 BuildRequires:  libicns-utils
 BuildRequires:  zopfli
@@ -73,6 +74,9 @@ for size in 16x16 22x22 24x24 32x32 36x36 48x48 96x96 256x256 ; do
     inkscape -h $(echo $size | cut -d 'x' -f 1 ) -w $(echo $size | cut -d 'x' -f 1 ) src/icons/icon-darkbackground.svg -o build/hicolor/$size/fedora-logo-icon.png
 done
 inkscape -h 128 -w 128 src/icons/icon-darkbackground.svg -o build/hicolor/scalable/fedora-logo-icon.svg
+
+# Optimise SVGS
+find ./build/ -type f -name "*.svg" -exec sh -c 'scour -i "$0" -o "$0"' {} \;
 
 # Install icons
 
