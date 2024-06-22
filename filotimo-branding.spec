@@ -15,8 +15,8 @@ BuildRequires:  zopfli
 BuildRequires:  hardlink
 BuildRequires:	kde4-macros(api)
 
-Conflicts:      fedora-logos
 Provides:       fedora-logos
+Obsoletes:      fedora-logos
 
 %description
 Logos and branding for Filotimo Linux.
