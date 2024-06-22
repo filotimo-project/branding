@@ -85,7 +85,7 @@ install -p -m 644 build/bootloader/fedora.vol build/bootloader/fedora_media.vol 
 
 # SVG Filotimo logos
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/fedora-logos
-cp -a fedora_*.svg $RPM_BUILD_ROOT%{_datadir}/fedora-logos
+cp -a build/fedora_*.svg $RPM_BUILD_ROOT%{_datadir}/fedora-logos
 
 # /usr/share/pixmaps
 for i in build/pixmaps/* ; do
@@ -198,17 +198,3 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
-* Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.1-1
-- new package built with tito
-
-* Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.3-1
-- Fix %%install no such directory (tduck973564@gmail.com)
-
-* Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.2-1
-- Fix builddeps (tduck973564@gmail.com)
-- Fix builddeps (tduck973564@gmail.com)
-- Automatic commit of package [filotimo-branding] release [0.1-1].
-  (tduck973564@gmail.com)
-- Initialized to use tito. (tduck973564@gmail.com)
-- Create README.md (tduck973564@gmail.com)
-
