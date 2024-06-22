@@ -198,6 +198,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+* Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.1-1
+- new package built with tito
+
 * Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.3-1
 - Fix %%install no such directory (tduck973564@gmail.com)
 
