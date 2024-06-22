@@ -1,5 +1,5 @@
 Name:           filotimo-branding
-Version:        0.1
+Version:        0.2
 Release:        1%{?dist}
 Summary:        Logos and branding for Filotimo Linux
 
@@ -197,3 +197,11 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+* Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.2-1
+- Fix builddeps (tduck973564@gmail.com)
+- Fix builddeps (tduck973564@gmail.com)
+- Automatic commit of package [filotimo-branding] release [0.1-1].
+  (tduck973564@gmail.com)
+- Initialized to use tito. (tduck973564@gmail.com)
+- Create README.md (tduck973564@gmail.com)
+
