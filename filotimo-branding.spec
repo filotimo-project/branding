@@ -27,7 +27,6 @@ Logos and branding for Filotimo Linux.
 
 %build
 
-
 %install
 install -pm 0644 %{SOURCE0} LICENSE
 
@@ -135,7 +134,6 @@ hardlink -vv %{buildroot}/usr
 %config(noreplace) %{_sysconfdir}/favicon.png
 %{_datadir}/plymouth/themes/spinner/watermark.png
 %{_datadir}/plymouth/themes/filotimo/watermark.png
-%dir %{_kde4_sharedir}/kde4/
 %{_kde4_iconsdir}/oxygen/
 %{_datadir}/pixmaps/*
 # Anaconda icons don't exist, we will use Calamares
@@ -198,6 +196,3 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
-* Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.1-1
-- new package built with tito
-
