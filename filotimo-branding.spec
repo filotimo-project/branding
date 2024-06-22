@@ -125,6 +125,7 @@ popd
 
 # Fedora hicolor icons
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps
+install -p -m 644 build/hicolor/scalable/fedora-logo-icon.svg $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/fedora-logo-icon.svg
 install -p -m 644 build/hicolor/scalable/fedora-logo-icon.svg $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/start-here.svg
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/places/
 pushd $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/places/
