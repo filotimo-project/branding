@@ -81,7 +81,7 @@ install -p -m 644 build/watermark.png $RPM_BUILD_ROOT%{_datadir}/plymouth/themes
 # /usr/share/pixmaps/bootloader
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/pixmaps/bootloader
 install -p -m 644 build/bootloader/fedora.icns $RPM_BUILD_ROOT%{_datadir}/pixmaps/bootloader
-install -p -m 644 build/bootloader/fedora.vol build/bootloader/fedora-media.vol $RPM_BUILD_ROOT%{_datadir}/pixmaps/bootloader
+install -p -m 644 build/bootloader/fedora.vol build/bootloader/fedora_media.vol $RPM_BUILD_ROOT%{_datadir}/pixmaps/bootloader
 
 # SVG Filotimo logos
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/fedora-logos
