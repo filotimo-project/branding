@@ -74,6 +74,7 @@ for size in 16x16 22x22 24x24 32x32 36x36 48x48 96x96 256x256 ; do
     inkscape -h $(echo $size | cut -d 'x' -f 1 ) -w $(echo $size | cut -d 'x' -f 1 ) src/icons/icon-darkbackground.svg -o build/hicolor/$size/fedora-logo-icon.png
 done
 inkscape -h 128 -w 128 src/icons/icon-darkbackground.svg -o build/hicolor/scalable/fedora-logo-icon.svg
+inkscape -h 128 -w 128 src/icons/icon-symbolic.svg -o build/hicolor/scalable/fedora-logo-icon-symbolic.svg
 
 # Optimise SVGS
 find ./build/ -type f -name "*.svg" -exec sh -c 'scour -i "$0" -o "$0"' {} \;
@@ -130,10 +131,14 @@ popd
 # Fedora hicolor icons
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps
 install -p -m 644 build/hicolor/scalable/fedora-logo-icon.svg $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/fedora-logo-icon.svg
+install -p -m 644 build/hicolor/scalable/fedora-logo-icon-symbolic.svg $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/fedora-logo-icon-symbolic.svg
 install -p -m 644 build/hicolor/scalable/fedora-logo-icon.svg $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/start-here.svg
+install -p -m 644 build/hicolor/scalable/fedora-logo-icon-symbolic.svg $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/start-here-symbolic.svg
+install -p -m 644 build/hicolor/scalable/fedora-logo-icon-symbolic.svg $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/apps/start-here-kde-fedora-symbolic.svg
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/places/
 pushd $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/places/
   ln -s ../apps/start-here.svg .
+  ln -s ../apps/start-here-symbolic.svg .
 popd
 
 hardlink -vv %{buildroot}/usr
