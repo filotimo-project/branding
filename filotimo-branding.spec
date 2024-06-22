@@ -1,5 +1,5 @@
 Name:           filotimo-branding
-Version:        0.2
+Version:        0.3
 Release:        1%{?dist}
 Summary:        Logos and branding for Filotimo Linux
 
@@ -196,6 +196,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+* Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.3-1
+- Simplify logos (tduck973564@gmail.com)
+
 * Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.2-1
 - Fix buildrequires (tduck973564@gmail.com)
 - Remove duplicate changelog entry (tduck973564@gmail.com)
