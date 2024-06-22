@@ -18,6 +18,10 @@ BuildRequires:	kde4-macros(api)
 Provides:       fedora-logos
 Obsoletes:      fedora-logos
 
+Provides:       redhat-logos
+Provides:       gnome-logos
+Provides:       system-logos
+
 %description
 Logos and branding for Filotimo Linux.
 
