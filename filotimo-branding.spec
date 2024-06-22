@@ -11,7 +11,7 @@ BuildArch:      noarch
 BuildRequires:  inkscape
 BuildRequires:  netpbm-progs
 BuildRequires:  libicns-utils
-BuildRequires:  zopflipng
+BuildRequires:  zopflip
 BuildRequires:  hardlink
 
 Conflicts:      fedora-logos
@@ -197,6 +197,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
-* Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com> 0.1-1
-- new package built with tito
+* Sat Jun 22 2024 Thomas Duckworth <tduck973564@gmail.com>
+- Automatic commit of package [filotimo-branding] release [0.1-1].
+  (tduck973564@gmail.com)
+- Initialized to use tito. (tduck973564@gmail.com)
+- Create README.md (tduck973564@gmail.com)
 
