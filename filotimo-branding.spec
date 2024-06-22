@@ -13,6 +13,7 @@ BuildRequires:  netpbm-progs
 BuildRequires:  libicns-utils
 BuildRequires:  zopfli
 BuildRequires:  hardlink
+BuildRequires:	kde4-macros(api)
 
 Conflicts:      fedora-logos
 Provides:       fedora-logos
