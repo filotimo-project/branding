@@ -1,5 +1,5 @@
 Name:           filotimo-branding
-Version:        0.3
+Version:        0.1
 Release:        1%{?dist}
 Summary:        Logos and branding for Filotimo Linux
 
