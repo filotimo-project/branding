@@ -1,5 +1,5 @@
 Name:           filotimo-branding
-Version:        0.8
+Version:        0.9
 Release:        1%{?dist}
 Summary:        Logos and branding for Filotimo Linux
 
@@ -210,6 +210,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+* Sun Jun 23 2024 Thomas Duckworth <tduck973564@gmail.com> 0.9-1
+- Update icons to look nicer (tduck973564@gmail.com)
+
 * Sun Jun 23 2024 Thomas Duckworth <tduck973564@gmail.com> 0.8-1
 - Add symbolic icons (tduck973564@gmail.com)
 
