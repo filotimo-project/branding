@@ -53,6 +53,7 @@ inkscape -h 415 src/logos/banner-lightbackground.svg -o build/fedora_logo.svg
 # /usr/share/pixmaps
 inkscape -h 252 -w 252 src/icons/icon-darkbackground.svg -o build/pixmaps/fedora-logo-sprite.png
 inkscape -h 252 -w 252 src/icons/icon-darkbackground.svg -o build/pixmaps/fedora-logo-sprite.svg
+cp build/pixmaps/fedora-logo-sprite.svg build/pixmaps/fedora_whitelogo.svg
 
 inkscape -h 164 src/logos/banner-darkbackground.svg -o build/pixmaps/fedora-logo.png
 inkscape -h 47 src/logos/banner-darkbackground.svg -o build/pixmaps/fedora-logo-small.png
