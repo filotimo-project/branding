@@ -1,5 +1,5 @@
 Name:           filotimo-branding
-Version:        0.10
+Version:        0.11
 Release:        1%{?dist}
 Summary:        Logos and branding for Filotimo Linux
 
@@ -211,6 +211,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+* Sun Jun 23 2024 Thomas Duckworth <tduck973564@gmail.com> 0.11-1
+- Sddm logo (tduck973564@gmail.com)
+
 * Sun Jun 23 2024 Thomas Duckworth <tduck973564@gmail.com> 0.10-1
 - Fix symbolic icon (tduck973564@gmail.com)
 
