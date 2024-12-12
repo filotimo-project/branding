@@ -5,8 +5,7 @@ Summary:        Logos and branding for Filotimo Linux
 
 License:        GPL-2.0
 URL:            https://github.com/filotimo-project/branding
-Source0:        %{name}-%{version}.tar.gz
-Source1:        bartholemule.gif
+Source:        %{name}-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  inkscape
@@ -39,7 +38,6 @@ install -pm 0644 %{SOURCE0} LICENSE
 
 # Bartholemule
 mkdir -p %{buildroot}%{_datadir}
-cp %{SOURCE1} %{buildroot}%{_datadir}
 
 # Build icons
 mkdir -p build/pixmaps
@@ -152,7 +150,6 @@ hardlink -vv %{buildroot}/usr
 %files
 %license LICENSE
 %config(noreplace) %{_sysconfdir}/favicon.png
-%{_datadir}/bartholemule.gif
 %{_datadir}/plymouth/themes/spinner/watermark.png
 %{_datadir}/plymouth/themes/filotimo/watermark.png
 %{_kde4_iconsdir}/oxygen/
