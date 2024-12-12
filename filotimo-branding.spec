@@ -1,5 +1,5 @@
 Name:           filotimo-branding
-Version:        1.3
+Version:        1.4
 Release:        1%{?dist}
 Summary:        Logos and branding for Filotimo Linux
 
@@ -214,6 +214,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+* Thu Dec 12 2024 Thomas Duckworth <tduck973564@gmail.com> 1.4-1
+- new package built with tito
+
 * Thu Jul 11 2024 Thomas Duckworth <tduck973564@gmail.com> 0.14-1
 - OBS releaser for Tito
 
