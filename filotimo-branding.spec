@@ -5,7 +5,7 @@ Summary:        Logos and branding for Filotimo Linux
 
 License:        GPL-2.0
 URL:            https://github.com/filotimo-project/branding
-Source:        %{name}-%{version}.tar.gz
+Source:         %{name}-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  inkscape
@@ -145,6 +145,22 @@ pushd $RPM_BUILD_ROOT%{_datadir}/icons/hicolor/scalable/places/
   ln -s ../apps/start-here-symbolic.svg .
 popd
 
+# Anaconda
+# https://pagure.io/fedora-logos/blob/master/f/anaconda
+# https://src.fedoraproject.org/rpms/fedora-logos/blob/rawhide/f/fedora-logos.spec
+mkdir -p %{buildroot}%{_datadir}/anaconda/boot
+install -p -m 644 anaconda/splash.lss %{buildroot}%{_datadir}/anaconda/boot/
+install -p -m 644 anaconda/syslinux-splash.png %{buildroot}%{_datadir}/anaconda/boot/
+install -p -m 644 anaconda/syslinux-vesa-splash.png %{buildroot}%{_datadir}/anaconda/boot/splash.png
+
+mkdir -p %{buildroot}%{_datadir}/anaconda/pixmaps
+install -p -m 644 anaconda/anaconda_header.png %{buildroot}%{_datadir}/anaconda/pixmaps/
+install -p -m 644 anaconda/sidebar-logo.png %{buildroot}%{_datadir}/anaconda/pixmaps/
+install -p -m 644 anaconda/sidebar-bg.png %{buildroot}%{_datadir}/anaconda/pixmaps/
+install -p -m 644 anaconda/topbar-bg.png %{buildroot}%{_datadir}/anaconda/pixmaps/
+install -p -m 644 anaconda/fedora.css %{buildroot}%{_datadir}/anaconda/pixmaps/
+
+
 hardlink -vv %{buildroot}/usr
 
 %files
@@ -154,11 +170,10 @@ hardlink -vv %{buildroot}/usr
 %{_datadir}/plymouth/themes/filotimo/watermark.png
 %{_kde4_iconsdir}/oxygen/
 %{_datadir}/pixmaps/*
-# Anaconda icons don't exist, we will use Calamares
-# %{_datadir}/anaconda/pixmaps/*
-# %{_datadir}/anaconda/boot/splash.lss
-# %{_datadir}/anaconda/boot/syslinux-splash.png
-# %{_datadir}/anaconda/boot/splash.png
+%{_datadir}/anaconda/pixmaps/*
+%{_datadir}/anaconda/boot/splash.lss
+%{_datadir}/anaconda/boot/syslinux-splash.png
+%{_datadir}/anaconda/boot/splash.png
 %{_datadir}/icons/hicolor/*/apps/*
 %{_datadir}/icons/hicolor/*/places/*
 %{_datadir}/icons/Bluecurve/*/apps/*
@@ -208,9 +223,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/icons/hicolor/scalable/
 %dir %{_datadir}/icons/hicolor/scalable/apps/
 %dir %{_datadir}/icons/hicolor/scalable/places/
-# %dir %{_datadir}/anaconda
-# %dir %{_datadir}/anaconda/boot/
-# %dir %{_datadir}/anaconda/pixmaps/
+%dir %{_datadir}/anaconda
+%dir %{_datadir}/anaconda/boot/
+%dir %{_datadir}/anaconda/pixmaps/
 %dir %{_datadir}/plymouth/
 
 %changelog
