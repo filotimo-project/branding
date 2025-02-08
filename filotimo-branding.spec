@@ -1,5 +1,5 @@
 Name:           filotimo-branding
-Version:        1.4
+Version:        1.5
 Release:        1%{?dist}
 Summary:        Logos and branding for Filotimo Linux
 
@@ -229,6 +229,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+* Sat Feb 08 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-1
+- anaconda logos (tduck973564@gmail.com)
+
 * Thu Dec 12 2024 Thomas Duckworth <tduck973564@gmail.com> 1.4-1
 - new package built with tito
 
