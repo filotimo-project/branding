@@ -1,6 +1,6 @@
 Name:           filotimo-branding
 Version:        1.5
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        Logos and branding for Filotimo Linux
 
 License:        GPL-2.0
@@ -16,13 +16,8 @@ BuildRequires:  zopfli
 BuildRequires:  hardlink
 BuildRequires:  kde4-macros(api)
 
-Provides:       fedora-logos
-Provides:       redhat-logos
-Provides:       gnome-logos
-Provides:       system-logos
-
 %description
-Logos and branding for Filotimo Linux.
+Logos and branding for Filotimo.
 
 %define debug_package %{nil}
 
@@ -227,6 +222,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+* Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-3
+- Dependency stuff
+
 * Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-2
 - 
 
