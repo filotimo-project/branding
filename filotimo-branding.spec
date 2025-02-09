@@ -225,6 +225,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+* Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-6
+- epoch (tduck973564@gmail.com)
+
 * Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-5
 - fix it (tduck973564@gmail.com)
 - fix it (tduck973564@gmail.com)
