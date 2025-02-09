@@ -225,6 +225,15 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+<<<<<<< Updated upstream
+=======
+* Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com>
+- 
+
+* Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-5
+- 
+
+>>>>>>> Stashed changes
 * Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-4
 - 
 
