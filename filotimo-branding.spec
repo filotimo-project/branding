@@ -1,6 +1,6 @@
 Name:           filotimo-branding
-Version:        1.5
-Release:        8%{?dist}
+Version:        1.6
+Release:        1%{?dist}
 Summary:        Logos and branding for Filotimo Linux
 
 License:        GPL-2.0
@@ -33,7 +33,6 @@ Logos and branding for Filotimo.
 %install
 install -pm 0644 %{SOURCE0} LICENSE
 
-# Bartholemule
 mkdir -p %{buildroot}%{_datadir}
 
 # Build icons
@@ -237,22 +236,6 @@ hardlink -vv %{buildroot}/usr
 
 * Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-5
 - fix it (tduck973564@gmail.com)
-- fix it (tduck973564@gmail.com)
-
-* Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com>
-- fix it (tduck973564@gmail.com)
-
-<<<<<<< Updated upstream
-=======
-* Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com>
-- 
-
-* Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-5
-- 
-
->>>>>>> Stashed changes
-* Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-4
-- 
 
 * Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-3
 - Dependency stuff
