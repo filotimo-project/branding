@@ -225,6 +225,9 @@ hardlink -vv %{buildroot}/usr
 %dir %{_datadir}/plymouth/
 
 %changelog
+* Mon Feb 10 2025 Thomas Duckworth <tduck973564@gmail.com> 1.6-1
+- white logo in anaconda logo (tduck973564@gmail.com)
+
 * Sun Feb 09 2025 Thomas Duckworth <tduck973564@gmail.com> 1.5-8
 - FVLEKCRTJTNCGBHLSCORHJNGVC (tduck973564@gmail.com)
 
